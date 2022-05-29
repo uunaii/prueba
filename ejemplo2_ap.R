@@ -10,8 +10,8 @@
 #* @get /dataset 
 
 function(keyword ="", geo="", time=""){
-  datos <- gtrends(keyword = "", 
-                   geo = "" , time = " ")
+  datos <- gtrends(keyword , 
+                   geo  , time)
   list(head(datos$interest_over_time))
 }
 
